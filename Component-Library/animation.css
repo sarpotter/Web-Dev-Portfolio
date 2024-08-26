@@ -1,0 +1,156 @@
+.animation-holder {
+    display: flex;
+    justify-content: center;
+    gap:25px;
+    padding: 20px;
+}
+
+/* Animation 1 */
+
+.loader {
+    padding: 35px;
+    background-color: var(--violet);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 9px 15px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    border-radius: 50%;
+    animation: loading-animation1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loader2 {
+    padding: 35px;
+    background-color: var(--sage);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 9px 15px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    border-radius: 50%;
+    animation: loading-animation2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.loader3 {
+    padding: 35px;
+    background-color: var(--violet);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 9px 15px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    border-radius: 50%;
+    animation: loading-animation3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading-animation1 {
+    0% {
+        background-color: var(--violet);
+    }
+    33% {
+        background-color: var(--sage);
+    }
+    66% {
+        background-color: var(--violet);
+    }
+}
+
+@keyframes loading-animation2 {
+    0% {
+        background-color: var(--sage);
+    }
+    33% {
+        background-color: var(--violet);
+    }
+    66% {
+        background-color: var(--violet);
+    }
+}
+
+@keyframes loading-animation3 {
+    0% {
+        background-color: var(--violet);
+    }
+    33% {
+        background-color: var(--violet);
+    }
+    66% {
+        background-color: var(--sage);
+    }
+}
+
+/* Animation 2 */
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: var(--violet);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 20px, rgba(0, 0, 0, 0.22) 0px 5px 10px;
+    animation: animation1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.small-square {
+    width: 50px;
+    height: 50px;
+    background-color: var(--pink);
+    animation: animation2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+}
+
+.square:hover {
+    cursor:pointer;
+}
+
+@keyframes animation1 {
+    0% {
+        transform:rotateY(2160deg);
+        background-color: var(--violet);
+    }
+    50% {
+        background-color: var(--sage);
+    }
+    99% {
+        transform: rotateY(0deg);
+        background-color: var(--violet);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        background-color: var(--pink);
+    }
+    50% {
+        background-color: var(--primary);
+    }
+    99% {
+        background-color: var(--pink);
+    }
+}
+
+/* Animation 3 */
+
+.text {
+    position:relative;
+    color:var(--sage);
+    font-size: x-large;
+    animation: example 5s linear infinite;
+}
+
+.box {
+    width:150px;
+    height: 100px;  
+}
+
+@keyframes example {
+    0%   {color:var(--sage); left:0px; top:0px;}
+    25%  {color:var(--pink); left:75px; top:75px;}
+    50%  {color:var(--sage); left:0px; top:75px;}
+    75%  {color:var(--pink); left:75px; top:0px;}
+    100% {color:var(--sage); left:0px; top:0px;}
+}

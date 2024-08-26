@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <title>Component Library</title>
+        <script src="component.js" defer></script>
+        <script src="function.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animation.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="nav-items">
+                <span class="material-icons" id="nav-menu">menu</span>
+                <span>SpinUp Component Library</span>
+            </span>
+            <span class="nav-items">
+                <a class="link">Page 1</a>
+                <a class="link">Page 2</a>
+                <a class="link">Page 3</a>
+                <a class="link">Page 4</a>
+            </span>
+        </nav>
+        <div class="drawer" open="false" id="navDrawer">
+            <a><span class="material-icons">person</span>Profile</a>
+            <a><span class="material-icons">home</span>Home</a>
+            <a><span class="material-icons">star</span>Favorites</a>
+            <a><span class="material-icons">settings</span>Settings</a>
+        </div>
+        <main class="container">
+            <article class="holder">
+                <h3 class="example-title">Color Palette</h3>
+                <div class="center">
+                    <div class="primary"></div>
+                    <div class="gray"></div>
+                    <div class="pink"></div>
+                    <div class="violet"></div>
+                    <div class="sage"></div>
+                </div>
+                <div class="label">CSS</div>
+                <pre class="code" id="color-css"></pre>
+            </article>
+            <article class="holder">
+                <h3 class="example-title">NavBar</h3>
+                <div class="placeholder">Example: See Top of Page</div>
+                <div class="label">HTML</div>
+                <pre class="code" id="navbar-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="navbar-css"></pre>
+            </article>
+            <article class="holder">
+                <h3 class="example-title">Navigation Drawer</h3>
+                <div class="placeholder">Example: See Menu Icon</div>
+                <div class="label">HTML</div>
+                <pre class="code" id="drawer-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="drawer-css"></pre>
+                <div class="label">JS</div>
+                <pre class="code" id="drawer-js"></pre>
+            </article>
+            <article class="holder">
+                <h3 class="example-title">Buttons</h3>
+                <div id="buttons">
+                    <button class="btn" pressed="false" id="btn1">
+                        <span>Share</span>
+                    </button>
+                    <button class="btn" pressed="false" id="btn2">
+                        <span>Share</span>
+                        <span class="material-icons">group</span>
+                    </button>
+                    <button class="fab" pressed="false" id="fab-btn">
+                        <span class="material-icons">add</span>
+                    </button> 
+                </div>
+                <div class="label">HTML</div>
+                <pre class="code" id="button-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="button-css"></pre>
+                <div class="label">JS</div>
+                <pre class="code" id="button-js"></pre>
+                <h4 class="example-title">Floating Action Button (FAB)</h4>
+                <div class="label">HTML</div>
+                <pre class="code" id="fab-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="fab-css"></pre>
+                <div class="label">JS</div>
+                <pre class="code" id="fab-js"></pre>
+            </article>
+    
+            <article class="holder">
+                <h3 class="example-title">Image Carousel</h3>
+                <div class="center">
+                    <div class="carousel">
+                        <div class="pic">
+                          <img src="https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149_1280.jpg"/>
+                        </div>
+                        <div class="pic">
+                          <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014_1280.jpg"/>
+                        </div>
+                        <div class="pic">
+                            <img src="https://cdn.pixabay.com/photo/2016/09/21/04/46/barley-field-1684052_1280.jpg"/>  
+                        </div>
+                        <div class="pic">
+                            <img src="https://cdn.pixabay.com/photo/2018/08/21/23/29/forest-3622519_1280.jpg"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="label">HTML</div>
+                <pre class="code" id="image-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="image-css"></pre>
+                <div class="label">JS</div>
+                <pre class="code" id="image-js"></pre>
+            </article>
+    
+            <article class="holder">
+                <h3 class="example-title">Loading Animation 1</h3>
+                <div class="animation-holder">
+                    <div class="loader"></div>
+                    <div class="loader2"></div>
+                    <div class="loader3"></div>
+                </div>
+                <div class="label">HTML</div>
+                <pre class="code" id="animate1-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="animate1-css"></pre>
+            </article>
+            <article class="holder">
+                <h3 class="example-title">Loading Animation 2 (Interactive)</h3>
+                <div class="animation-holder">
+                    <div class="square" id="box">
+                        <div class="small-square" id="small-square"></div>
+                    </div>
+                </div>
+                <div class="label">HTML</div>
+                <pre class="code" id="animate2-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="animate2-css"></pre>
+                <div class="label">JS</div>
+                <pre class="code" id="animate2-js"></pre>
+            </article>
+            <article class="holder">
+                <h3 class="example-title">Loading Animation 3 (Text)</h3>
+                <div class="animation-holder">
+                    <div class="box">
+                        <div class="text">SpinUp</div>
+                    </div>
+                </div>
+                <div class="label">HTML</div>
+                <pre class="code" id="animate3-html"></pre>
+                <div class="label">CSS</div>
+                <pre class="code" id="animate3-css"></pre>
+            </article>
+        </main>
+
+
+    </body>
+</html>

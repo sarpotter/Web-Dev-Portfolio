@@ -1,0 +1,103 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #d1bacf;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    padding: 0px 20px 20px 20px;
+    margin: 0px 20px 20px 20px;
+}
+
+.small-title {
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px;
+    font-size:1.12em;
+}
+
+
+#search-box {
+    width: 80%;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10%;
+    margin: 0px 20px 30px 20px;
+    border-radius: 20px;
+    border: 3px solid #471043
+
+}
+
+#main {
+    font-size: 1.5em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote-holder {
+    width: 75%;
+    text-align: center;
+    height:auto;
+    min-height:10%;
+}
+
+#error {
+    font-size: small;
+    margin-bottom: 2%;
+    color: #701228;
+}
+
+.searched {
+    font-size: 1.5em;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-quote {
+    font-size:small;
+    width: 75%;
+    text-align:left;
+    height: fit-content;
+    background-color: #ebe7ab;
+    border: 3px solid #917110;
+    padding: 1%;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.search-author {
+    text-align: right;
+    height: auto;
+}
+
+.pinned {
+    font-size:small;
+    width: 75%;
+    text-align:left;
+    height: fit-content;
+    background-color: #917110;
+    border: 3px solid #ebe7ab;
+    padding: 1%;
+    margin: auto;
+    margin-top: 2%;
+    color: white;
+}
+
+.pinned:hover {
+    cursor:pointer;
+}
+
+
+.search-quote:hover {
+    cursor:pointer;
+}

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Recipe Builder</title>
+        <script src="recipe.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>World Recipeace Recipe Builder</h1>
+
+        <div class="text-box">
+            <input type="text" placeholder="Recipe title" id="title">
+        </div>
+
+        <div class="text-box">
+            <input type="text" placeholder="Ingredient Name" id="ingred-input" aria-label="Ingredient input." aria-description="Press enter or click button to add to list"/>
+            <button id="bttn-ingred">ADD</button>
+        </div>
+
+        <div class="holder" id="ingred-collection">
+            <div id="placeholder-ingred" class="placeholder">Ingredients will appear here</div>
+            <ul id="list-ingred" aria-label="Ingredient" aria-description="Press enter to delete ingredient." aria-live="polite"></ul>
+        </div>
+
+        <div class="text-box">
+            <input type="text" placeholder="Instruction" id="instruct-input" aria-label="Instruction input." aria-description="Press enter or click button to add to list"/>
+            <button id="bttn-instruct">ADD</button>
+        </div>
+        
+        <div class="holder" id="instruct-collection">
+            <div id="placeholder-instruct" class="placeholder">Instructions will appear here</div>
+            <ul id="list-instruct" aria-label="Instruciton" aria-description="Press enter to delete instruction" aria-live="polite"></ul>
+        </div>
+        <div id="button-div">
+            <button id="download">Download File</button>
+            <button id="reset">Reset</button>
+        </div>
+    </body>
+</html>
